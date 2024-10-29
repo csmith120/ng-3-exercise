@@ -3,7 +3,7 @@
     <ul>
       <li *ngFor="let order of orders">{{ order }}</li>
     </ul>
-    <button (click)="startWorkday()">Start Workday</button>
-    <button (click)="endWorkday()">End Workday</button>
+    <button (click)="startWorkday()" [disabled]="workdayStarted">Start Workday</button>
+    <button (click)="endWorkday()" [disabled]="!workdayStarted">End Workday</button>
   </div>
   

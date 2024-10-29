@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-all-other-orders',
   templateUrl: './all-other-orders.component.html',
-  styleUrl: './all-other-orders.component.css'
+  styleUrls: ['./all-other-orders.component.css']
 })
 export class AllOtherOrdersComponent {
-
+  @Input() orders: number[] = [];
 }

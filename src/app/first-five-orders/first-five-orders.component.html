@@ -1,1 +1,7 @@
-<p>first-five-orders works!</p>
+<div class="first-five-orders">
+    <h2>First Five Orders</h2>
+    <ul>
+      <li *ngFor="let order of orders.slice(0, 5)">{{ order }}</li>
+    </ul>
+  </div>
+  
