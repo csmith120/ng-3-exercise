@@ -1,1 +1,7 @@
-<p>all-other-orders works!</p>
+<div class="all-other-orders">
+    <h2>All Other Orders</h2>
+    <ul>
+      <li *ngFor="let order of orders.slice(5)">{{ order }}</li>
+    </ul>
+  </div>
+  
